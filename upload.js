@@ -27,10 +27,6 @@ $(document).ready(function(){
            localStorage.setItem("refreshToken",resultData.refreshToken);
            localStorage.setItem("expires_in",resultData.expires_in);
            window.history.pushState({}, document.title, "/SSD/" + "upload.html");
-           
-           
-           
-           
         }
   });
 
@@ -110,13 +106,7 @@ $(document).ready(function(){
         var file = $("#files")[0].files[0];
         var upload = new Upload(file);
     
-        // maby check size or type here with upload.getSize() and upload.getType()
-    
         // execute upload
         upload.doUpload();
     });
-
-
-
-    
 });

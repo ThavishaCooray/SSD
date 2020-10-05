@@ -38,12 +38,5 @@ $(document).ready(function(){
        // this line makes the user redirected to the url
 
        window.location = url;
-
-
-
-
     }
-
-
-
 });
